@@ -35,7 +35,7 @@ For instance "It was a good sunny day" will score 2.0 points, meaning it is a po
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT"
+  s.license      = 'MIT'
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -80,8 +80,8 @@ For instance "It was a good sunny day" will score 2.0 points, meaning it is a po
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SKWord.{h,m}", "SKPolygraph.{h,m}"
-  s.exclude_files = "Demo/*"
+  s.source_files  = "SKPolygraph/SKWord.{h,m}", "SKPolygraph/SKPolygraph.{h,m}"
+  s.exclude_files = "SKPolygraph/Demo/*"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -94,7 +94,7 @@ For instance "It was a good sunny day" will score 2.0 points, meaning it is a po
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resources  = "*.txt"
+  s.resources  = "SKPolygraph/**/*.txt"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
