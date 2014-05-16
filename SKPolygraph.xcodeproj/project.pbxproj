@@ -122,15 +122,9 @@
 		BD0B843E1926258400F4FB12 /* SKPolygraph */ = {
 			isa = PBXGroup;
 			children = (
-				BD0B8476192674D500F4FB12 /* Model */,
-				BD0B847219266FA400F4FB12 /* Logic */,
+				BD0B847A19269B1700F4FB12 /* Demo */,
+				BD0B8476192674D500F4FB12 /* Classes */,
 				BD0B846D19266F0900F4FB12 /* opinion-lexicon-English */,
-				BD0B84471926258400F4FB12 /* SKAppDelegate.h */,
-				BD0B84481926258400F4FB12 /* SKAppDelegate.m */,
-				BD0B844A1926258400F4FB12 /* Main.storyboard */,
-				BD0B844D1926258400F4FB12 /* SKViewController.h */,
-				BD0B844E1926258400F4FB12 /* SKViewController.m */,
-				BD0B84501926258400F4FB12 /* Images.xcassets */,
 				BD0B843F1926258400F4FB12 /* Supporting Files */,
 			);
 			path = SKPolygraph;
@@ -174,22 +168,28 @@
 			path = "opinion-lexicon-English";
 			sourceTree = "<group>";
 		};
-		BD0B847219266FA400F4FB12 /* Logic */ = {
-			isa = PBXGroup;
-			children = (
-				BD0B847319266FFF00F4FB12 /* SKPolygraph.h */,
-				BD0B847419266FFF00F4FB12 /* SKPolygraph.m */,
-			);
-			name = Logic;
-			sourceTree = "<group>";
-		};
-		BD0B8476192674D500F4FB12 /* Model */ = {
+		BD0B8476192674D500F4FB12 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				BD0B84771926750300F4FB12 /* SKWord.h */,
 				BD0B84781926750300F4FB12 /* SKWord.m */,
+				BD0B847319266FFF00F4FB12 /* SKPolygraph.h */,
+				BD0B847419266FFF00F4FB12 /* SKPolygraph.m */,
 			);
-			name = Model;
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		BD0B847A19269B1700F4FB12 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				BD0B84471926258400F4FB12 /* SKAppDelegate.h */,
+				BD0B84481926258400F4FB12 /* SKAppDelegate.m */,
+				BD0B844A1926258400F4FB12 /* Main.storyboard */,
+				BD0B844D1926258400F4FB12 /* SKViewController.h */,
+				BD0B844E1926258400F4FB12 /* SKViewController.m */,
+				BD0B84501926258400F4FB12 /* Images.xcassets */,
+			);
+			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

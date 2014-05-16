@@ -20,16 +20,12 @@ Pod::Spec.new do |s|
   s.summary      = "A cocoapod for simple sentiment analysis of English text."
 
   s.description  = <<-DESC
-                   A longer description of SKPolygraph in Markdown format.
+This is a CocoaPod that can be used for simple sentiment analysis of an English text. Sentiment analysis aims to determine the attitude of a speaker or a writer with respect to some topic or the overall contextual polarity of a text. Simply put it tells you whether the text is "happy" or "sad".
 
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
+For instance "It was a good sunny day" will score 2.0 points, meaning it is a positive text and "It was rainy and cold day" will be graded as negative.
                    DESC
 
   s.homepage     = "https://github.com/SandorUK/SKPolygraph"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -39,9 +35,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-
+  s.license      = "MIT"
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -53,10 +47,8 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
   
-  s.author             = { "Sandor" => "" }
-  # Or just: s.author    = "Sandor"
-  # s.authors            = { "Sandor" => "" }
-  # s.social_media_url   = "http://twitter.com/Sandor"
+  s.author             = { "Sandor Kolotenko" => "" }
+  s.social_media_url   = "http://twitter.com/iSandor"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -64,8 +56,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -89,8 +80,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "SKWord.{h,m}", "SKPolygraph.{h,m}"
+  s.exclude_files = "Demo/*"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -103,8 +94,7 @@ Pod::Spec.new do |s|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources  = "*.txt"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -128,7 +118,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
