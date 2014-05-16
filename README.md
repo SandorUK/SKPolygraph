@@ -14,16 +14,16 @@ How to use it?
 --------------
 
 Install using [CocoaPods](http://cocoapods.org/). 
-	'pod SKPolygraph'
+	`pod SKPolygraph`
 
 Include SKPolygraph in your code
-	'#include "SKPolygraph.h"'
+	`#include "SKPolygraph.h"`
 
 Sample usage to get sentimental score for text
-	'float score = [[SKPolygraph sharedInstance] analyseSentiment:@"It was cold and rainy."];'
+	`float score = [[SKPolygraph sharedInstance] analyseSentiment:@"It was cold and rainy."];`
 
-You can also analyse a single word. For that you need to include 'SKWord.h'. Use it like this:
-	'SKWord *word = [[SKPolygraph sharedInstance] analyseSentimentOfWord:@"cold"];'
+You can also analyse a single word. For that you need to `#include "SKWord.h"`. Use it like this:
+	`SKWord *word = [[SKPolygraph sharedInstance] analyseSentimentOfWord:@"cold"];`
 
 See sample project unit tests for more examples.
 
