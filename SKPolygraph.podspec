@@ -35,7 +35,7 @@ For instance "It was a good sunny day" will score 2.0 points, meaning it is a po
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = 'MIT'
+	  s.license      = {:type => 'MIT', :file => 'LICENSE'}
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
